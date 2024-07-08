@@ -1,0 +1,166 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 14</title>
+  </head>
+  <body>
+    <!-- First Section -->
+    <section id="firstSection">
+      <h1>Egyptian Garden</h1>
+      <div id="menuIcon">
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Open</span>
+      </div>
+  </section>
+
+  <!-- Side Menu -->
+  <div id="sideMenu" class="sidenav">
+      <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+      <a href="#home">Home</a>
+      <a href="#duration">Duration</a>
+      <a href="#details">Details</a>
+      <a href="#contact">Contact</a>
+  </div>
+
+  <!-- Second Section -->
+  <section id="duration" class="p-5">
+    <div class="accordion" id="accordionExample">
+      <div class="card">
+          <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Section 1
+                  </button>
+              </h2>
+          </div>
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, distinctio.
+              </div>
+          </div>
+      </div>
+      <div class="card">
+          <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Section 2
+                  </button>
+              </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, ab.              </div>
+          </div>
+      </div>
+      <div class="card">
+          <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Section 3
+                  </button>
+              </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, a!
+              </div>
+          </div>
+      </div>
+      <div class="card">
+          <div class="card-header" id="headingFour">
+              <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Section 4
+                  </button>
+              </h2>
+          </div>
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <div class="card-body">
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, distinctio!
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+  
+
+  <!-- Third Section -->
+  <section id="details" class="p-5 text-center">
+    <h2>Countdown to Event</h2>
+    <div id="countdown" class="d-flex justify-content-center mt-3">
+        <div class="countdown-square">
+            <span id="days"></span>
+            <div class="countdown-label">Days</div>
+        </div>
+        <div class="countdown-square">
+            <span id="hours"></span>
+            <div class="countdown-label">Hours</div>
+        </div>
+        <div class="countdown-square">
+            <span id="minutes"></span>
+            <div class="countdown-label">Minutes</div>
+        </div>
+        <div class="countdown-square">
+            <span id="seconds"></span>
+            <div class="countdown-label">Seconds</div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Fourth Section -->
+  <section id="contact" class="p-5 text-center">
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-6 mb-4">
+              <h2 style="font-weight: bold;">Join Us</h2>
+              <p style="color: rgba(255, 255, 255, 0.8);">Fill out the form below to get in touch with us.</p>
+              <form id="joinForm">
+                  <div class="form-group">
+                      <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                  </div>
+                  <div class="form-group">
+                      <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                  </div>
+                  <div class="form-group">
+                      <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Send Message</button>
+              </form>
+          </div>
+          <div class="col-lg-6 mb-4">
+              <div class="contact-info">
+                  <h2 style="font-weight: bold;">CONTACT INFO</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, officia?</p>
+                  <div class="contact-item">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span>123 Street, City, Country</span>
+                  </div>
+                  <div class="contact-item">
+                      <i class="fas fa-envelope"></i>
+                      <span>email@example.com</span>
+                  </div>
+                  <div class="contact-item">
+                      <i class="fas fa-phone"></i>
+                      <span>+1234567890</span>
+                  </div>
+                  <div class="social-icons mt-4">
+                      <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                      <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                      <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                      <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  </section>
+
+    <script src="JS/jquery-3.7.1.min.js"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/index.js"></script>
+  </body>
+</html>
